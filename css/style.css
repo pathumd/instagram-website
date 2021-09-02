@@ -1,0 +1,268 @@
+/* Fonts */
+@font-face {
+    font-family: "Avenir";
+    src: url(/fonts/AvenirLTStd-Black.otf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url(/fonts/AvenirLTStd-Roman.otf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url(/fonts/AvenirLTStd-Book.otf);
+    font-weight: 100;
+}
+
+/* Universal styling */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Avenir";
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* Pre-styles */
+
+.text-lg {
+    font-size: 50px;
+    font-weight: 200;
+    color: #17102f;
+}
+
+.text-md {
+    font-size: 18px;
+    font-weight: 200;
+    color: #939396;
+}
+
+.text-sm {
+    font-size: 16px;
+    font-weight: 100;
+    color: #939396;
+}
+
+a {
+    text-decoration: none;
+    color: #675fd1;
+    cursor: pointer;
+}
+
+/* Intro/Header */
+.logo {
+    position: relative;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+
+header {
+    position: relative;
+    text-align: center;
+}
+
+.line1 {
+    margin-bottom: 15px;
+}
+
+/* Login form */
+
+.login-page {
+    position: relative;
+    width: 500px;
+    padding-top: 50px;
+    margin: auto;
+    overflow: visible;
+}
+
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    width: 100%;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+}
+
+.form input {
+    font-family: "Avenir";
+    outline: 0;
+    background: transparent;
+    width: 100%;
+    color: #17102f;
+    border: 2px solid #f4f2f7;
+    border-radius: 15px;
+    margin: 0 0 25px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #939396;
+    opacity: 1; /* Firefox */
+}
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #939396;
+}
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #939396;
+}
+
+
+button {
+    width: 100%;
+    background: rgb(125,97,209);
+    background: linear-gradient(90deg, rgba(125,97,209,1) 0%, rgba(163,98,209,1) 50%, rgba(177,98,209,1) 100%);
+    border: none;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 10px 10px 10px 10px;
+    padding: 15px;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 40px rgba(180, 74, 255, 0.4);
+    
+}
+
+.message {
+    margin-top: 50px;
+    font-size: 16px;
+    margin-bottom: 70px;
+}
+
+/* Footer */
+
+.footer-nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-nav li {
+    list-style-type: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+/* Illustrations */
+
+.left-pictures {
+    position: absolute;
+    z-index: -1;
+    transform: scale(0.8);
+    left: -500px;
+    top: -300px;
+}
+
+.right-pictures {
+    position: absolute;
+    z-index: -1;
+    transform: scale(0.8);
+    right: -500px;
+    top: -300px;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 1px) and (max-width: 499px) {
+    .login-page {
+        width: 90%;
+    }
+}
+
+/*Smaller Mobile*/
+
+@media only screen and (min-width: 1px) and (max-width: 349px) {
+
+
+}
+
+/*Mobile/Tablet*/
+
+@media only screen and (min-width: 350px) and (max-width: 767px) {
+
+    .left-pictures, .right-pictures {
+        display: none;
+    }
+
+}
+
+/*Tablet*/
+
+  @media only screen and (min-width: 768px) and (max-width: 1029px) {
+
+    .left-pictures {
+        transform: scale(0.5);
+        left: -600px;
+        top: -450px;
+    }
+
+    .right-pictures {
+        transform: scale(0.5);
+        right: -600px;
+        top: -450px;
+    }
+
+  }
+
+/*Laptop*/
+
+@media only screen and (min-width: 1030px) and (max-width: 1366px) {
+
+    .left-pictures {
+        transform: scale(0.5);
+        left: -600px;
+        top: -450px;
+    }
+
+    .right-pictures {
+        transform: scale(0.5);
+        right: -600px;
+        top: -450px;
+    }
+
+  }
+
+
+/*Desktop*/
+
+@media only screen and (min-width: 1367px) and (max-width: 1650px) {
+
+    .left-pictures {
+        transform: scale(0.7);
+        left: -600px;
+        top: -450px;
+    }
+
+    .right-pictures {
+        transform: scale(0.7);
+        right: -600px;
+        top: -450px;
+    }
+
+  }
