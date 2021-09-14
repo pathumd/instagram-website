@@ -1,0 +1,393 @@
+/* Fonts */
+@font-face {
+    font-family: "Avenir";
+    src: url(../fonts/AvenirLTStd-Black.otf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url(../fonts/AvenirLTStd-Roman.otf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url(../fonts/AvenirLTStd-Book.otf);
+    font-weight: 100;
+}
+
+/* Universal styling */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Avenir";
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+/* Pre-styles */
+
+.text-lg {
+    font-size: 50px;
+    font-weight: 300;
+    color: #17102f;
+}
+
+.text-md {
+    font-size: 18px;
+    font-weight: 200;
+    color: #939396;
+}
+
+.text-search {
+    font-size: 14px;
+    font-weight: 200;
+    color: #17102f;
+}
+
+.text-sm {
+    font-size: 16px;
+    font-weight: 100;
+    color: #939396;
+}
+
+a {
+    text-decoration: none;
+    color: #675fd1;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    background: rgb(125,97,209);
+    background: linear-gradient(90deg, rgba(125,97,209,1) 0%, rgba(163,98,209,1) 50%, rgba(177,98,209,1) 100%);
+    border: none;
+    border-radius: 45px;
+    padding: 10px 10px 10px 10px;
+    padding: 15px;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 1.5px 20px rgba(180, 74, 255, 0.4);
+    
+}
+
+/* Top Horizontal navigation */
+
+input {
+    font-family: "Avenir";
+    outline: 0;
+    background:#eceaf0;
+    width: 100%;
+    color: #17102f;
+    border: 2px solid #eceaf0;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 50px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #939396;
+    opacity: 1; /* Firefox */
+    font-size: 14px;
+}
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #939396;
+}
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #939396;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    padding: 22px 0 40px 0;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.image img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.image {
+    width: 100px;
+    margin-left: 150px;
+}
+
+.search-bar {
+    width: 300px;
+}
+
+.post-btn {
+    width: 130px;
+    margin-right: 150px;
+}
+
+/* Horizontal line */
+
+hr {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    z-index: 2;
+    border: 0.5px solid #f4f2f7;
+}
+
+/* Top Vertical navigation */
+
+header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 1.5px 20px rgba(163, 163, 163, 0.2);
+}
+
+.logo img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.logo {
+    position: relative;
+    width: 30px;
+    margin: 0 auto;
+    margin-top: 22px;
+}
+
+.main-icons svg, .settings svg {
+    width: 100%;
+    cursor: pointer;
+}
+
+.main-icons {
+    margin-top: 200px;
+}
+
+.settings {
+    margin-top: 150px;
+}
+
+.icon {
+    margin-bottom: 50px;
+}
+
+.icon-container {
+    position: relative;
+    width: 70px;
+    margin: 0 auto;
+}
+
+/* Profile info */
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.profile img {
+    height: 100%;
+}
+
+.profile {
+    width: 80px;
+    height: 80px;
+    margin-right: 30px;
+    overflow: hidden;
+}
+
+.fullname  {
+    font-size: 25px;
+}
+
+.caption {
+    background: none;
+    margin-top: 5px;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+/* Profile stats */
+
+.stats {
+    display: flex;
+    width: 100%;
+    gap: 80px;
+    margin-top: 60px;
+    justify-content: center;
+    text-align: center;
+}
+
+.vertical-line {
+    border-left: 2px solid #eceaf0;
+    height: 60px;
+}
+
+.stats h1 {
+    font-size: 30px;
+}
+
+.stats h2 {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+/* Instagram Highlights */
+
+.highlights {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    margin-top: 60px;
+    text-align: center;
+    justify-content: center;
+}
+
+.story img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.story h1 {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+/* Instagram Posts */
+
+.cen {
+    max-width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.post-container {
+    position: relative;
+    display: inline-block;
+    width: calc(100% / 3);
+    margin: 0 -2px;
+    margin-top: 100px;
+    padding: 0px 30px 0px 30px;
+    box-sizing: border-box;
+}
+
+.post-image {
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.post-image:hover {
+    box-shadow: 0 1.5px 40px rgba(163, 163, 163, 0.1);
+}
+
+.post-stats {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: right;
+}
+
+.post-stats h1 {
+    font-size: 12px;
+    margin: 0px 10px 0px 10px;
+}
+
+.post-stats svg {
+    cursor: pointer;
+}
+
+.heart {
+    margin-right: 10px;
+}
+
+/* Media queries for features items (resizing for different viewports */
+@media screen and (max-width: 900px) {
+
+    .post-container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .post-container {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+/*Mobile/Tablet*/
+
+@media only screen and (min-width: 350px) and (max-width: 767px) {
+
+    .search-bar {
+        width: 200px;
+    }
+
+    .add-post {
+        width: 110px;
+    }
+
+}
+
+/*Tablet*/
+
+  @media only screen and (min-width: 768px) and (max-width: 1029px) {
+
+    
+
+  }
+
+/*Laptop*/
+
+@media only screen and (min-width: 1030px) and (max-width: 1366px) {
+
+
+
+  }
