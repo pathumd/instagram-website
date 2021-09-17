@@ -145,23 +145,23 @@ button:hover {
 .message {
     margin-top: 50px;
     font-size: 16px;
-    margin-bottom: 70px;
 }
 
 /* Footer */
 
-.footer-nav {
-    position: relative;
+.footer-text {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
     display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
     justify-content: center;
 }
 
-.footer-nav ul {
-    display: flex;
-    gap: 40px;
-}
-
-.footer-nav li {
+.footer-child {
     list-style-type: none;
     display: inline-block;
     cursor: pointer;
