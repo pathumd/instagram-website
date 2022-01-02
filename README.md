@@ -1,7 +1,8 @@
 # Instagram web app redesign
 Project Version 1.1 09/14/2021
 
-![alt text](https://github.com/pathumd/Sadaham-Sisila/blob/main/mainmockup.jpg?raw=true)
+![alt text](https://i.imgur.com/SmynPeA.jpg?raw=true)
+![alt text](https://i.imgur.com/DrEF4bZ.jpg?raw=true)
 Description:
 --------------
 - Using HTML and CSS, I redesigned the login page, as well as the profile page of Instagram's web app.
