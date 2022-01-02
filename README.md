@@ -14,10 +14,6 @@ Tools used:
 - CSS
 - Adobe XD
 
-Instructions:
----------
-To access and view the profile page, click the purple 'Login' button located on the login page
-
 License:
 ---------
 Copyright (c) Pathum Danthanarayana 2021
